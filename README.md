@@ -8,7 +8,7 @@
   <p>Author: <a href="https://tocode.ru" target="_blank">To code</a> | <a href="https://www.youtube.com/playlist?list=PLkCrmfIT6LBQWN02hNj6r1daz7965GxsV" target="_blank">Youtube guide in Russian</a></p>
 </div>
 
-
+test
 ## Build Setup:
 
 ``` bash
@@ -125,7 +125,7 @@ const PAGES_DIR = `${PATHS.src}/pug/mynewfolder/pages/`
 3. Rerun webpack dev server
 
 ## Create Another PUG Files:
-#### Default: 
+#### Default:
 Automatic creation any pug pages:
 1. Create another pug file in `./pug/pages/`
 2. Open new page `http://localhost:8081/about.html` (Don't forget to RERUN dev server)
