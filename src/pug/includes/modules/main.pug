@@ -1,0 +1,55 @@
+main.page-main  
+    .wrapper__left
+      .wrapper__left--text Sign up
+    .wrapper__right.form
+      form.form(action='#' method='post')
+        h1.form__title New user?
+        p.form__description Use the form below to create your account.
+          ul.form__list
+            li.form__list--item
+              label.form__label(for='first-name') First Name
+              input#first-name.form__input(type='text' name='first-name' placeholder='Alice' required='')
+            li.form__list--item
+              label.form__label(for='last-name') Last Name
+              input#last-name.form__input(type='text' name='last-name' placeholder='Miller' required='')
+            li.form__list--item
+              label.form__label(for='nationality') Nationality
+              select#nationality.form__select(name='nationality')
+                - var nationalityList = ['Afghan', 'Albanian', 'Algerian', 'American', 'Andorran', 'Angolan', 'Antiguans', 'Argentinean', 'Armenian', 'Australian', 'Austrian', 'Azerbaijani', 'Bahamian', 'Bahraini', 'Bangladeshi', 'Barbadian', 'Barbudans', 'Batswana', 'Belarusian', 'Belgian', 'Belizean', 'Beninese', 'Bhutanese', 'Bolivian', 'Bosnian', 'Brazilian', 'British', 'Bruneian', 'Bulgarian', 'Burkinabe', 'Burmese', 'Burundian', 'Cambodian', 'Cameroonian', 'Canadian', 'Cape Verdean', 'Central African', 'Chadian', 'Chilean', 'Chinese', 'Colombian', 'Comoran', 'Congolese', 'Costa Rican', 'Croatian', 'Cuban', 'Cypriot', 'Czech', 'Danish', 'Djibouti', 'Dominican', 'Dutch', 'East Timorese', 'Ecuadorean', 'Egyptian', 'Emirian', 'Equatorial Guinean', 'Eritrean', 'Estonian', 'Ethiopian', 'Fijian', 'Filipino', 'Finnish', 'French', 'Gabonese', 'Gambian', 'Georgian', 'German', 'Ghanaian', 'Greek', 'Grenadian', 'Guatemalan', 'Guinea-Bissauan', 'Guinean', 'Guyanese', 'Haitian', 'Herzegovinian', 'Honduran', 'Hungarian', 'I-Kiribati', 'Icelander', 'Indian', 'Indonesian', 'Iranian', 'Iraqi', 'Irish', 'Israeli', 'Italian', 'Ivorian', 'Jamaican', 'Japanese', 'Jordanian', 'Kazakhstani', 'Kenyan', 'Kittian and Nevisian', 'Kuwaiti', 'Kyrgyz', 'Laotian', 'Latvian', 'Lebanese', 'Liberian', 'Libyan', 'Liechtensteiner', 'Lithuanian', 'Luxembourger', 'Macedonian', 'Malagasy', 'Malawian', 'Malaysian', 'Maldivan', 'Malian', 'Maltese', 'Marshallese', 'Mauritanian', 'Mauritian', 'Mexican', 'Micronesian', 'Moldovan', 'Monacan', 'Mongolian', 'Moroccan', 'Mosotho', 'Motswana', 'Mozambican', 'Namibian', 'Nauruan', 'Nepalese', 'New Zealander', 'Nicaraguan', 'Nigerian', 'Nigerien', 'North Korean', 'Northern Irish', 'Norwegian', 'Omani', 'Pakistani', 'Palauan', 'Panamanian', 'Papua New Guinean', 'Paraguayan', 'Peruvian', 'Polish', 'Portuguese', 'Qatari', 'Romanian', 'Russian', 'Rwandan', 'Saint Lucian', 'Salvadoran', 'Samoan', 'San Marinese', 'Sao Tomean', 'Saudi', 'Scottish', 'Senegalese', 'Serbian', 'Seychellois', 'Sierra Leonean', 'Singaporean', 'Slovakian', 'Slovenian', 'Solomon Islander', 'Somali', 'South African', 'South Korean', 'Spanish', 'Sri Lankan', 'Sudanese', 'Surinamer', 'Swazi', 'Swedish', 'Swiss', 'Syrian', 'Taiwanese', 'Tajik', 'Tanzanian', 'Thai', 'Togolese', 'Tongan', 'Trinidadian/Tobagonian', 'Tunisian', 'Turkish', 'Tuvaluan', 'Ugandan', 'Ukrainian', 'Venezuelan', 'Vietnamese', 'Welsh', 'Yemenite', 'Zambian', 'Zimbabwean']
+                each val in nationalityList
+                  option.form__select--list(value= val)= val
+            li.form__list--item
+              label.form__label(for='email') E-mail
+              input#email.form__input.input__email(type='email' name='email' placeholder='alice.miller@yahoo.com' required='')
+            li.form__list--item
+              label.form__label--date(for='userbirth') Date of Birth
+              .form__label--wrapper
+                select#userday.form__select.select-day(name='userday')
+                  - for(var i = 1; i <= 31; i+= 1)
+                    option.form__select--list(value= i)= i
+                select#usermonth.form__select.select-month(name='usermonth')
+                  - var months = ['January','February','March','April','May','June','July','August','September','October','November','December']
+                  each name in months
+                    option.form__select--list(value= name)= name
+                select#useryear.form__select.select-year(name='useryear')
+                  - for(var i = 1945; i <= 2019; i+= 1)
+                    option.form__select--list(value= i)= i
+            li.form__list--item
+              label.form__label(for='user-name') Gender
+              .wrapper
+                input#male.form__radio(type='radio' name='gender' value='male')
+                label.form__label--radio.radio-male(for='male') Male
+                input#female.form__radio(type='radio' name='gender' valie='female' checked)
+                label.form__label--radio.radio-female(for='female') Female
+            li.form__list--item
+              label.form__label(for='password') Password
+              input#password.form__input(type='password' name='password' required='')
+            li.form__list--item
+              label.form__label(for='confpassword') Confirm Password
+              input#confpassword.form__input(type='password' name='nonfpassword' required='')
+          .form__footer
+            .form__footer--link
+              p.form__link--description Have an account?
+                a.form__link--link(href= '#') Login
+                .form__footer--button
+                  button.form__footer--button.button-signup Complete Signup
