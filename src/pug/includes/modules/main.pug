@@ -1,8 +1,9 @@
-main.page-main  
+main.page-main
+  .wrapper
     .wrapper__left
       .wrapper__left--text Sign up
     .wrapper__right.form
-      form.form(action='#' method='post')
+      form.form__form(action='#' method='post')
         h1.form__title New user?
         p.form__description Use the form below to create your account.
           ul.form__list
@@ -36,7 +37,7 @@ main.page-main
                     option.form__select--list(value= i)= i
             li.form__list--item
               label.form__label(for='user-name') Gender
-              .wrapper
+              .form__wrapper
                 input#male.form__radio(type='radio' name='gender' value='male')
                 label.form__label--radio.radio-male(for='male') Male
                 input#female.form__radio(type='radio' name='gender' valie='female' checked)
@@ -51,5 +52,5 @@ main.page-main
             .form__footer--link
               p.form__link--description Have an account?
                 a.form__link--link(href= '#') Login
-                .form__footer--button
-                  button.form__footer--button.button-signup Complete Signup
+            .form__footer--button
+              button.form__footer--button.button-signup Complete Signup
