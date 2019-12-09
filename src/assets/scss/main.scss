@@ -1,7 +1,7 @@
-@import "utils/libs";
-@import "utils/vars";
-@import "utils/mixins";
-@import "utils/fonts";
+//@import "utils/libs";
+//@import "utils/vars";
+//@import "utils/mixins";
+//@import "utils/fonts";
 
 body {
   display: flex;
@@ -11,11 +11,6 @@ body {
 	background: #ededed;
   margin: 0;
   padding: 0;
-  font-family: $primaryFont;
-	font-size: $mainFontSize;
-  font-weight: $mainFontWeight;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 *, *:before, *:after { box-sizing: border-box; }
@@ -32,7 +27,7 @@ ul, li {
   list-style-type: none;
 }
 
-.content-wrapper {
+/*.content-wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -53,7 +48,7 @@ ul, li {
   @media screen and (max-width: $phoneWidth) {
     max-width: smPhoneWidth;
   }
-}
+} */
 
 // Modules
 // @import "modules/my-module.scss";

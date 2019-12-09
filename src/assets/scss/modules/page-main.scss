@@ -24,7 +24,7 @@
   	left: 20px;
   	bottom: 72px;
   	width: 162px;
-  	font-family: 'PTSans', sans-serif;
+  	font-family: 'PT Sans', sans-serif;
   	font-style: normal;
   	font-weight: normal;
   	font-size: 49px;
@@ -137,6 +137,7 @@
 
 .form__input {
   padding-bottom: 5px;
+  font-family: 'Work Sans', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
@@ -161,13 +162,27 @@
 
 .form__select {
   padding-bottom: 5px;
+  font-family: 'Work Sans', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 16px;
+  letter-spacing: 1px;
 	outline: none;
 	border: none;
 	border-bottom: 1px solid #F2F2F2;
+  background-color: transparent;
+
+  &--nationality {
+    border-radius: 0;
+    background: transparent;
+    -webkit-appearance: none;
+    width: 238px;
+  }
+
+  &--wrapper {
+    background: url('/assets/img/arrow.png') right no-repeat;
+  }
 }
 
 .select-month {
@@ -203,7 +218,7 @@
 .button-signup {
   width: 155px;
 	height: 32px;
-	font-family: 'PTSans', sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
@@ -211,4 +226,5 @@
 	color: #ffffff;
 	background: #5A61ED;
 	border: none;
+  cursor: pointer;
 }

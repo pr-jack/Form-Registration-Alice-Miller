@@ -1,27 +1,2 @@
 // Fonts here
 // see more: https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
-
-@font-face {
-  font-family: "PTSans";
-  src: url('/assets/fonts/PT Sans.eot'); /* IE9 Compat Modes */
-  src: url('/assets/fonts/PT Sans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/assets/fonts/PT Sans.woff2') format('woff2'), /* Pretty Modern Browsers */
-       url('/assets/fonts/PT Sans.woff') format('woff'), /* Pretty Modern Browsers */
-       url('/assets/fonts/PT Sans.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('/assets/fonts/PT Sans.svg') format('svg'); /* Legacy iOS */
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Work Sans";
-  src: url('/assets/fonts/Work Sans.eot'); /* IE9 Compat Modes */
-  src: url('/assets/fonts/Work Sans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/assets/fonts/Work Sans.woff2') format('woff2'), /* Pretty Modern Browsers */
-       url('/assets/fonts/Work Sans.woff') format('woff'), /* Pretty Modern Browsers */
-       url('/assets/fonts/Work Sans.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('/assets/fonts/Work Sans.svg') format('svg'); /* Legacy iOS */  
-  font-style: normal;
-  font-display: swap;
-}
